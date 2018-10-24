@@ -1,0 +1,140 @@
+:root {
+  --clr-khaki: #5E583F;
+  --clr-grey-dark: #2c3033;
+  --clr-grey-light: #867E72;
+  --clr-grey-bright: #B9C1C9;
+  --clr-yellow: #DB922C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--clr-grey-light);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--clr-grey-light);
+}
+
+/* -------------------- TOP SECTION ---------------------- */
+
+.section--top {
+  background: var(--clr-grey-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--top ul {
+  list-style: none;
+  display: flex;
+}
+
+.section--top li {
+  margin: 3px 20px 0 0;
+}
+
+.section--top i:hover {
+  opacity: 0.7;
+}
+
+.section--top p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* --------------------- NAVIGATION ------------------------ */
+
+.section--nav {
+  margin: 0 auto;
+  background: var(--clr-grey-light);
+}
+
+nav {
+  color: var(--clr-grey-dark);  
+  max-width: 80vw;
+}
+
+nav::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: left;
+}
+
+.nav_logo {
+  width: 50px;
+  margin: 3px 0 3px 10px;
+  float: left;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 10px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------- HERO SECTION ------------------------ */
+
+.section--hero {
+  background-image: url(../images/hero-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_logo {
+  display: none;
+  max-width: 20vw;
+  min-width: 200px;
+}
+
+.fancy_text {
+  display: none;
+  font-family: 'Montez', cursive;
+  font-size: 2rem;
+  color: var(--clr-grey-bright);
+  background: rgba(0,0,0,0.4);
+  padding: 7px;
+  border-radius: 5px;  
+}
+
+/* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
+
+@media all and (max-width: 1000px) {
+  
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 400px) {
+
+  nav li {
+    flex-basis: 100%;
+  }
+}
