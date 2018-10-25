@@ -24,6 +24,10 @@ a {
 
 /* -------------------- TOP SECTION ---------------------- */
 
+.slicknav_menu {
+  display: none;
+}
+
 .section--top {
   background: var(--clr-grey-dark);
   display: flex;
@@ -54,6 +58,7 @@ a {
 .section--nav {
   margin: 0 auto;
   background: var(--clr-grey-light);
+  text-align: center;
 }
 
 nav {
@@ -89,6 +94,7 @@ nav a {
   color: inherit;
   text-decoration: none;
   margin-left: 10px;
+  letter-spacing: 1.3px;
 }
 
 nav a:hover {
@@ -126,15 +132,43 @@ nav a:hover {
 /* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
 
 @media all and (max-width: 1000px) {
-  
-  nav ul {
-    flex-wrap: wrap;
+
+  #menu {
+    display: none;
   }
-}
 
-@media all and (max-width: 400px) {
+  .slicknav_menu {
+    display: inline-block;
+    position: fixed;
+    /* background: transparent; */
+    right: 0;
+    top: 0;
+    background: var(--clr-grey-dark);
+    width: 100%;
+    text-align: right;
+    
+  }
 
-  nav li {
-    flex-basis: 100%;
+  .slicknav_menu a {
+    color: var(--clr-grey-light);  
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+  }
+
+  .nav_logo {
+    width: 25%;
+    min-width: 175  px;
+    margin: 3px 0 3px 10px;
+    float: none;
+    margin: auto 0;
+  }
+
+  .hero_logo {
+    display: none;
+    height: 0;
+  }
+
+  .section--top p {
+    z-index: 5;
   }
 }
