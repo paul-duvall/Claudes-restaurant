@@ -14,4 +14,4 @@ Site will ultimately have several subpages, which will include:
 
 I hope to include a couple of sub-sections, which will allow me to impliment a dropdown from the main menu.
 
-![alt text](http://url/to/img.png)
+![alt text](https://unsplash.com/photos/QwhQR_kF0AQ)
