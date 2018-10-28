@@ -22,6 +22,12 @@ a {
   color: var(--clr-grey-light);
 }
 
+h1 {
+  font-family: 'Montez', cursive;
+  font-weight: 100;
+  font-size: 2.4rem;
+}
+
 /* -------------------- TOP SECTION ---------------------- */
 
 .slicknav_menu {
@@ -111,6 +117,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .hero_logo {
@@ -123,15 +130,94 @@ nav a:hover {
   display: none;
   font-family: 'Montez', cursive;
   font-size: 2rem;
+  text-align: center;
   color: var(--clr-grey-bright);
   background: rgba(0,0,0,0.4);
   padding: 7px;
   border-radius: 5px;  
 }
 
+/* ---------------- AWARDS SECTION -------------------- */
+
+.section--awards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section--awards div {
+  display: flex;
+  align-items: center;
+}
+
+.section--awards div img {
+  padding: 15px;
+  width: 25vw;
+  max-width: 170px;
+}
+
+.section--awards div img:hover {
+  filter: grayscale(100%);
+}
+
+/* --------------------- MENU SECTION ------------------------ */
+
+.section--menus {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: white;
+  font-size: 1rem;
+}
+
+.menu_item {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 280px;
+  background-size: cover;
+  color: white;
+  border-radius: 5px;
+  margin: 30px;
+}
+
+#menu_item_lunch {
+  background-image: url(../images/menu-lunch.jpg);
+}
+
+#menu_item_dinner {
+  background-image: url(../images/menu-dinner.jpg);
+}
+
+#menu_item_taster {
+  background-image: url(../images/menu-taster.jpg);
+}
+
+.menu_info_top {
+  background: rgba(0,0,0,0.5);
+  padding: 5px 20px;
+}
+
+.menu_info_bottom {
+  position: absolute;
+  bottom: -110px; 
+  width: 100%;
+  max-height: 40%;
+  padding: 15px 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+.menu_item:hover > .menu_info_bottom {
+  display: inline;
+  transition: ease 0.8s;
+  bottom: 0;
+}
+
 /* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
 
 @media all and (max-width: 1000px) {
+
+  /* -------- RESPONSIVE MENU ------------ */
 
   #menu {
     display: none;
@@ -140,13 +226,11 @@ nav a:hover {
   .slicknav_menu {
     display: inline-block;
     position: fixed;
-    /* background: transparent; */
     right: 0;
     top: 0;
     background: var(--clr-grey-dark);
     width: 100%;
     text-align: right;
-    
   }
 
   .slicknav_menu a {
@@ -154,6 +238,8 @@ nav a:hover {
     font-size: 1rem;
     letter-spacing: 1.3px;
   }
+
+  /* -------- RESPONSIVE HERO ------------ */
 
   .nav_logo {
     width: 25%;
@@ -171,4 +257,22 @@ nav a:hover {
   .section--top p {
     z-index: 5;
   }
+
+}
+
+@media all and (max-width: 600px) {
+  
+  /* -------- RESPONSIVE AWARDS ------------ */
+
+  .awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .awards div img {
+    width: 50vw;
+    max-width: 170px;
+  }
+
 }
