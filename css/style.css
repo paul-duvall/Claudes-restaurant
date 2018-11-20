@@ -177,10 +177,35 @@ nav a:hover {
   filter: grayscale(0);
 }
 
+/* ---------------- ABOUT SECTION -------------------- */
+
+.about_image {
+  float: left;
+  padding: 40px;
+  padding-left: 100px;
+  
+}
+
+.about_image img {
+  width: 30vw;
+  border-radius: 5px;
+}
+
+.about_title {
+  /* padding-top: 25px; */
+  text-align: center;
+}
+
+.about_para {
+  margin: 15px 10vw;
+}
+
+
 /* --------------------- MENU SECTION ------------------------ */
 
 .section--menus {
   display: flex;
+  clear: left;
   justify-content: center;
   flex-wrap: wrap;
   background: white;
@@ -239,6 +264,7 @@ body {
 
 .section--reviews {
   display: flex;
+  margin-bottom: 20px;
   justify-content: center;
   flex-wrap: wrap;
   background: white;
@@ -328,6 +354,19 @@ body {
   bottom: 5px;
 }
 
+/* --------------------- FOOTER ------------------------ */
+
+footer {
+  padding: 5px;
+  background: var(--clr-grey-light);
+  color: white;
+  text-align: center;
+}
+
+footer .copyright {
+  margin-right: 30px;
+}
+
 
 /* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
 
@@ -406,3 +445,4 @@ body {
   }
 
 }
+
