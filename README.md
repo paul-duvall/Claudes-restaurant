@@ -1,6 +1,7 @@
 # Claudes-restaurant
 
-This project is a brochure website for a fictional restaurant called Claude's.
+This project is a brochure website for a fictional restaurant called Claude's. The website can be viewed here:
+[a link](https://wonderful-wilson-e250a9.netlify.com/)
 
 It uses jQuery to add responsive elements, including subtle animation of text on load and the responsive burger-style menu for smaller viewports.
 
