@@ -50,10 +50,11 @@ h2 {
 }
 
 .section--top {
-  background: var(--clr-grey-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: var(--clr-grey-dark);
+  color: var(--clr-grey-bright);
 }
 
 .section--top ul {
@@ -179,25 +180,49 @@ nav a:hover {
 
 /* ---------------- ABOUT SECTION -------------------- */
 
+.section--about {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_body {
+  /* border: 2px solid red; */
+  width: 80vw;
+  max-width: 1300px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about_text {
+  margin: 10px;
+  padding-left: 10px;
+  min-width: 350px;
+  max-width: 70vw;
+}
+
 .about_image {
-  float: left;
-  padding: 40px;
-  padding-left: 100px;
-  
+  /* border: 2px solid purple; */
+  margin-left: 10px;
+  max-width: 100%;
+  height: 100%;
 }
 
 .about_image img {
-  width: 30vw;
+  width: 100%;
+  min-width: 250px;
   border-radius: 5px;
 }
 
 .about_title {
-  /* padding-top: 25px; */
   text-align: center;
 }
 
 .about_para {
-  margin: 15px 10vw;
+  padding-bottom: 15px;
 }
 
 
@@ -205,7 +230,6 @@ nav a:hover {
 
 .section--menus {
   display: flex;
-  clear: left;
   justify-content: center;
   flex-wrap: wrap;
   background: white;
@@ -361,88 +385,9 @@ footer {
   background: var(--clr-grey-light);
   color: white;
   text-align: center;
+  font-size: 1rem;
 }
 
 footer .copyright {
   margin-right: 30px;
 }
-
-
-/* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
-
-@media all and (max-width: 1000px) {
-
-  /* -------- RESPONSIVE TOP BAR ------------ */
-/* 
-  .section--top {
-    z-index: 1;
-  }
-
-  .section--top p {
-    display: hidden;
-  }
-
-  .social-media-icons {
-    z-index: 1;
-  } */
-
-  /* -------- RESPONSIVE MENU ------------ */
-
-  #menu {
-    display: none;
-  }
-
-  .slicknav_menu {
-    display: inline-block;
-    position: fixed;
-    right: 0;
-    top: 0;
-    background: var(--clr-grey-dark);
-    width: 100%;
-    text-align: right;
-  }
-
-  .slicknav_menu a {
-    color: var(--clr-grey-light);  
-    font-size: 1rem;
-    letter-spacing: 1.3px;
-  }
-
-  /* -------- RESPONSIVE HERO ------------ */
-
-  .nav_logo {
-    width: 25%;
-    min-width: 175  px;
-    margin: 3px 0 3px 10px;
-    float: none;
-    margin: auto 0;
-  }
-
-  .hero_logo {
-    display: none;
-    height: 0;
-  }
-
-  .section--top p {
-    z-index: 5;
-  }
-
-}
-
-@media all and (max-width: 600px) {
-  
-  /* -------- RESPONSIVE AWARDS ------------ */
-
-  .awards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .awards div img {
-    width: 50vw;
-    max-width: 170px;
-  }
-
-}
-
