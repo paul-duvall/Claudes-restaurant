@@ -1,6 +1,6 @@
 # Claudes-restaurant
 
-This project is a brochure website for a fictional restaurant called Claude's.
+This project is a brochure website for a fictional restaurant called Claude's. The website can be viewed [here](https://wonderful-wilson-e250a9.netlify.com/).
 
 It uses jQuery to add responsive elements, including subtle animation of text on load and the responsive burger-style menu for smaller viewports.
 
@@ -14,4 +14,6 @@ Site will ultimately have several subpages, which will include:
 
 I hope to include a couple of sub-sections, which will allow me to impliment a dropdown from the main menu.
 
-![Screenshot of Claude's site](https://i.postimg.cc/Ls2SCXWk/screenshot1.jpg)
+![Screenshot 1 of Claude's site](https://raw.githubusercontent.com/paul-duvall/website_images/master/claudes-large-1.GIF)
+![Screenshot 2 of Claude's site](https://raw.githubusercontent.com/paul-duvall/website_images/master/claudes-large-2.GIF)
+![Screenshot 3 of Claude's site](https://raw.githubusercontent.com/paul-duvall/website_images/master/claudes-large-3.GIF)
