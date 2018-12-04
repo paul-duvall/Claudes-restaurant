@@ -1,8 +1,14 @@
+.section--hero {
+  background-image: url(../images/hero-menu.jpg);
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid var(--clr-grey-bright);
+  background-color: var(--clr-grey-light);
+  margin-bottom: 20px;
+  
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -14,6 +20,7 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-size: inherit;
 }
 
 /* Change background color of buttons on hover */
@@ -33,3 +40,53 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+.tabcontent {
+  animation: fadeEffect 2.5s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+/* -------------------- MENU STYLING ---------------------- */
+
+.menuContainer {
+  /* border: 2px solid red; */
+}
+
+.menuTitle {
+  /* border: 2px solid green; */
+  text-align: center;
+  font-family: 'Montez', cursive;
+  /* font-size: 2rem; */
+}
+
+.menuSection {
+  /* border: 2px solid blue; */
+  text-align: center;
+}
+
+.menuSectionTitle {
+  font-family: 'Montez', cursive;
+  /* font-size: 2rem; */
+}
+
+.menuItem {
+  margin: 20px;
+}
+
+.menuItemName {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.menuItemDesc, .menuItemPrice {
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* http://tom-simmons.co.uk/menu.php#a-la-carte */

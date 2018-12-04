@@ -1,5 +1,7 @@
-$(function(){
+// On the menu page, displays the lunch menu as a default
+document.getElementById('Lunch').style.display = "block";
 
+$(function(){
   const heroLogo = document.querySelector('.hero_logo');
   const heroText = document.querySelector('.fancy_text');
   // const menu = $('#menu');
@@ -15,6 +17,9 @@ $(function(){
     duration: 400,
   });
 });
+
+
+// **************************** Menu tabs ****************************
 
 function openMenu(evt, menuName) {
   // Declare all variables
