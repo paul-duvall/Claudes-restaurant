@@ -4,6 +4,8 @@
 
 /* Style the tab */
 .tab {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid var(--clr-grey-bright);
   background-color: var(--clr-grey-light);
@@ -25,12 +27,12 @@
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(112, 104, 92);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(90, 83, 73);
 }
 
 /* Style the tab content */
@@ -54,29 +56,40 @@
 
 /* -------------------- MENU STYLING ---------------------- */
 
-.menuContainer {
-  /* border: 2px solid red; */
+.menuIntro {
+  padding: 5px;
+  margin-left: 5vw;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
 }
 
 .menuTitle {
-  /* border: 2px solid green; */
   text-align: center;
   font-family: 'Montez', cursive;
-  /* font-size: 2rem; */
 }
 
 .menuSection {
-  /* border: 2px solid blue; */
   text-align: center;
 }
 
 .menuSectionTitle {
   font-family: 'Montez', cursive;
-  /* font-size: 2rem; */
 }
 
 .menuItem {
   margin: 20px;
+}
+
+.tasterContainer {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tasterMenuItem {
+  margin: 20px;
+  padding-top: 20px;
+  max-width: 600px;
 }
 
 .menuItemName {
@@ -88,5 +101,15 @@
   font-size: 0.8rem;
   margin-top: 4px;
 }
+
+.lunchPrices {
+  padding: 5px;
+  margin-left: 5vw;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 
 /* http://tom-simmons.co.uk/menu.php#a-la-carte */
