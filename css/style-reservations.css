@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 50px 20px 50px;
+}
+
+.section--info {
+  width: 50%;
+  margin: 10px;
+}
+
+.section--form {
+  width: 50%;
+  margin: 10px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+  /* background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(204,204,204,1) 100%); */
+  border-radius: 4px;
+}
+
+/* Form styling */
+
+.booking_item {
+  margin: 10px;
+  /* border: 2px solid blue; */
+}
+
+label {
+  display: inline-block;
+  width: 160px;
+  /* border: 2px solid red; */
+}
+
+input {
+  /* border: 2px solid green; */
+  padding: 5px;
+}
+
+.book_submit_container {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid green; */
+}
+
+.submit {
+  padding: 8px 15px;
+  background-color: white;
+}
