@@ -5,18 +5,58 @@
 }
 
 .section--info {
-  width: 50%;
+  width: 60%;
+  max-height: inherit;
   margin: 10px;
 }
 
+.section--info_top {
+  text-align: center;
+}
+
+.section--info_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--info_address {
+  font-size: 0.85em;
+}
+
+.section--info_email {
+  margin: 2px 0 7px;
+}
+
+.section--info_times {
+  padding-top: 5px;
+}
+
+.section--info_image {
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section--info_image img {
+  width: 60%;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+.section--info_para {
+  padding: 12px 2px 2px 2px;
+  max-width: 90%;
+}
+
 .section--form {
-  width: 50%;
+  width: 40%;
+  display: block;
+  height: 100%;
   margin: 10px;
   padding: 30px;
   background-color: white;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
-  /* background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 11%, rgba(204,204,204,1) 100%); */
   border-radius: 4px;
 }
 
@@ -24,24 +64,20 @@
 
 .booking_item {
   margin: 10px;
-  /* border: 2px solid blue; */
 }
 
 label {
   display: inline-block;
   width: 160px;
-  /* border: 2px solid red; */
 }
 
 input {
-  /* border: 2px solid green; */
   padding: 5px;
 }
 
 .book_submit_container {
   display: flex;
   justify-content: center;
-  /* border: 2px solid green; */
 }
 
 .submit {
