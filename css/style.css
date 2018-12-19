@@ -86,7 +86,6 @@ h3 {
   margin: 0 auto;
   background: var(--clr-grey-light);
   text-align: center;
-  /* z-index: 1; */
 }
 
 nav {
@@ -186,14 +185,12 @@ nav a:hover {
 /* ---------------- ABOUT SECTION -------------------- */
 
 .section--about {
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .about_body {
-  /* border: 2px solid red; */
   width: 80vw;
   max-width: 1300px;
   min-height: 500px;
@@ -210,7 +207,6 @@ nav a:hover {
 }
 
 .about_image {
-  /* border: 2px solid purple; */
   margin-left: 10px;
   max-width: 100%;
   height: 100%;

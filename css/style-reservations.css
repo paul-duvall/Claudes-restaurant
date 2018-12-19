@@ -68,11 +68,16 @@
 
 label {
   display: inline-block;
-  width: 160px;
+  width: 95%;
+  font-size: 1rem;
 }
 
 input {
   padding: 5px;
+}
+
+textarea {
+  width: 95%;
 }
 
 .book_submit_container {
@@ -83,4 +88,9 @@ input {
 .submit {
   padding: 8px 15px;
   background-color: white;
+  border-radius: 4px;
+}
+
+.submit:hover {
+  background-color: #B9C1C9;
 }

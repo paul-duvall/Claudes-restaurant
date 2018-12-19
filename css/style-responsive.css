@@ -1,0 +1,86 @@
+/* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
+
+@media all and (max-width: 1000px) {
+  /* -------- RESPONSIVE ABOUT SECTION ------------ */
+
+  .about_body {
+    flex-direction: column;
+  }
+
+  .about_image {
+    max-width: 55%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .about_image img {
+    width: 55%;
+  }
+}
+
+@media all and (max-width: 750px) {
+
+  /* -------- RESPONSIVE MENU ------------ */
+
+  #menu {
+    display: none;
+  }
+
+  .slicknav_menu {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: var(--clr-grey-dark);
+    width: 100%;
+    text-align: right;
+  }
+
+  .slicknav_menu a {
+    color: var(--clr-grey-light);  
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+  }
+
+  /* -------- RESPONSIVE HERO ------------ */
+
+  .nav_logo {
+    width: 25%;
+    min-width: 175  px;
+    margin: 3px 0 3px 10px;
+    float: none;
+    margin: auto 0;
+  }
+
+  .hero_logo {
+    display: none;
+    height: 0;
+  }
+
+  .section--top p {
+    z-index: 5;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  /* -------- RESPONSIVE TOP SECTION ------------ */
+  .top_text {
+    /* Removing the top call to action text */
+    visibility: hidden;
+  }
+  
+  /* -------- RESPONSIVE AWARDS ------------ */
+
+  .awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .awards div img {
+    width: 50vw;
+    max-width: 170px;
+  }
+}
+
