@@ -22,6 +22,10 @@ a {
   color: var(--clr-grey-light);
 }
 
+p {
+  margin-top: 10px;
+}
+
 h1 {
   font-family: 'Montez', cursive;
   font-weight: 100;
@@ -37,6 +41,10 @@ h2 {
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2rem;
+}
+
+h4 {
+  padding-bottom: 15px;
 }
 
 /* -------------------- SECTION TITLES ---------------------- */
