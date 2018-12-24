@@ -1,0 +1,29 @@
+/* ---------------- RESPONSIVE MEDIA QUERIES -------------------- */
+
+@media all and (max-width: 1000px) {  
+  .team_member {
+    flex-direction: column;
+  }
+
+  .team_member_info {
+    padding-top: 15px;
+    width: 60vw;
+  }
+
+  .team_member_info_odd {
+    order: 2;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .team_member_info {
+    padding-top: 15px;
+    width: 80vw;
+  }
+
+  .team_member_info_odd {
+    order: 2;
+  }
+
+}
+

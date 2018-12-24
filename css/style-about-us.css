@@ -1,3 +1,5 @@
+
+
 .section--team {
   /* border: 2px solid green; */
   margin: 10px;
@@ -17,6 +19,7 @@
 .team_member_image {
   /* border: 2px solid red; */
   width: 50vw;
+  min-width: 350px;
   text-align: center;
 }
 
